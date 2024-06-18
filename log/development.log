@@ -1,0 +1,123 @@
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-06-15 16:53:17.631034"], ["updated_at", "2024-06-15 16:53:17.631034"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2024-06-15 16:53:17.640453"], ["key", "environment"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "c6f775aee5e9671d6414149b740db5b753a2a120"], ["created_at", "2024-06-15 16:53:17.648810"], ["updated_at", "2024-06-15 16:53:17.648810"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-06-15 16:58:31.019514"], ["updated_at", "2024-06-15 16:58:31.019514"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2024-06-15 16:58:31.028972"], ["key", "environment"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "c6f775aee5e9671d6414149b740db5b753a2a120"], ["created_at", "2024-06-15 16:58:31.037226"], ["updated_at", "2024-06-15 16:58:31.037226"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "addon_rule_configs"[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "addon_rule_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "addon_rule_id" integer NOT NULL, "units" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE INDEX "index_addon_rule_configs_on_hours_rule_id" ON "addon_rule_configs" ("hours_rule_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "day_of_week_test_configs"[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "day_of_week_test_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "day_of_week_test_id" integer NOT NULL, "wday" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE INDEX "index_day_of_week_test_configs_on_day_of_week_test_id" ON "day_of_week_test_configs" ("earning_rule_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "earning_rules"[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "earning_rules" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "code" text NOT NULL, "type" text NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "earning_tests"[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "earning_tests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "earning_rule_id" integer NOT NULL, "type" text NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE INDEX "index_earning_tests_on_earning_rule_id" ON "earning_tests" ("earning_rule_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "earnings"[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "earnings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "earning_rule_id" integer NOT NULL, "shift_id" integer NOT NULL, "units" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE INDEX "index_earnings_on_earning_rule_id" ON "earnings" ("earning_rule_id")[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE INDEX "index_shift_earning_records_on_shift_id" ON "earnings" ("shift_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "hours_rule_configs"[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "hours_rule_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "hours_rule_id" integer NOT NULL, "rank" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE INDEX "index_hours_rule_configs_on_hours_rule_id" ON "hours_rule_configs" ("hours_rule_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "maximum_hours_test_configs"[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "maximum_hours_test_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "maximum_hours_test_id" integer NOT NULL, "period" text NOT NULL, "threshold" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE INDEX "index_maximum_hours_test_configs_on_maximum_hours_test_id" ON "maximum_hours_test_configs" ("earning_rule_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "shifts"[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "shifts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "start" datetime(6) NOT NULL, "finish" datetime(6) NOT NULL, "timesheet_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_shifts_on_timesheet_id" ON "shifts" ("timesheet_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "timesheets"[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "timesheets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "start" date NOT NULL, "finish" date NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "0410327cadfeb15930619eec625dfbc9ca29a05d"], ["created_at", "2024-06-15 17:05:11.874276"], ["updated_at", "2024-06-15 17:05:11.874276"]]
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "addon_rule_configs"[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "addon_rule_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "addon_rule_id" integer NOT NULL, "units" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_addon_rule_configs_on_hours_rule_id" ON "addon_rule_configs" ("hours_rule_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "day_of_week_test_configs"[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "day_of_week_test_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "day_of_week_test_id" integer NOT NULL, "wday" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE INDEX "index_day_of_week_test_configs_on_day_of_week_test_id" ON "day_of_week_test_configs" ("earning_rule_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "earning_rules"[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "earning_rules" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "code" text NOT NULL, "type" text NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "earning_tests"[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "earning_tests" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "earning_rule_id" integer NOT NULL, "type" text NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE INDEX "index_earning_tests_on_earning_rule_id" ON "earning_tests" ("earning_rule_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "earnings"[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "earnings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "earning_rule_id" integer NOT NULL, "shift_id" integer NOT NULL, "units" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE INDEX "index_earnings_on_earning_rule_id" ON "earnings" ("earning_rule_id")[0m
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE INDEX "index_shift_earning_records_on_shift_id" ON "earnings" ("shift_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "hours_rule_configs"[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "hours_rule_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "hours_rule_id" integer NOT NULL, "rank" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_hours_rule_configs_on_hours_rule_id" ON "hours_rule_configs" ("hours_rule_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "maximum_hours_test_configs"[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "maximum_hours_test_configs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "maximum_hours_test_id" integer NOT NULL, "period" text NOT NULL, "threshold" float NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_maximum_hours_test_configs_on_maximum_hours_test_id" ON "maximum_hours_test_configs" ("earning_rule_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "shifts"[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "shifts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "start" datetime(6) NOT NULL, "finish" datetime(6) NOT NULL, "timesheet_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_shifts_on_timesheet_id" ON "shifts" ("timesheet_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "timesheets"[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "timesheets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "start" date NOT NULL, "finish" date NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "development"], ["updated_at", "2024-06-15 17:05:12.053835"], ["key", "environment"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2024-06-15 17:05:12.066822"], ["key", "environment"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "0410327cadfeb15930619eec625dfbc9ca29a05d"], ["updated_at", "2024-06-15 17:05:12.079070"], ["key", "schema_sha1"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMaximumHoursTest Load (16.2ms)[0m  [1m[34mSELECT "earning_tests".* FROM "earning_tests" WHERE "earning_tests"."type" = ?[0m  [["type", "MaximumHoursTest"]]
+  [1m[36mEarningTest Load (0.3ms)[0m  [1m[34mSELECT "earning_tests".* FROM "earning_tests"[0m
